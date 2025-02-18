@@ -1,0 +1,60 @@
+.leaderboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFE66D;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #123524;
+}
+
+table {
+  width: 100%;
+  max-width: 650px;
+  border-collapse: collapse;
+  background: #f1eddf;
+  border-radius: 10px;
+  margin-bottom: 200px;
+}
+
+thead {
+  background: #4ECDC4;
+  color: white;
+}
+
+thead th {
+  padding: 12px;
+  font-size: 1rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 10px;
+  font-size: 1rem;
+  color: #1A1A1D;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #1A1A1D;
+  margin-bottom: 20px;
+}
+
+select {
+  font-size: 1rem;
+  padding: 5px 5px;
+  background-color: #fff;
+  border: 1px solid #1A1A1D;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}

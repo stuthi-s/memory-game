@@ -1,0 +1,44 @@
+.card div {
+  width: 9%;
+  height: 135px;
+  cursor: pointer;
+  position: relative;
+  transition: 1s ease;
+  border-radius: 15px;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+.front,
+.back {
+  width: auto;
+  height: 100%;
+  border-radius: 15px;
+  border: 2px solid #ffffff
+}
+
+@media (max-width: 480px) {
+  .card div {
+    width: 50px;
+    height: 75px;
+  }
+}
