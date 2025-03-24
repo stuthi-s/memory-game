@@ -120,7 +120,11 @@ function Game() {
     }
   }, [gameOver, finalTime]);
 
-  useEffect(() => shuffleCards, [])
+  useEffect(() => {
+    if (level) {
+      shuffleCards();
+    }
+  }, [level]); 
 
   return (
     <div className="game-container">
